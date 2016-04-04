@@ -1,0 +1,302 @@
+/*Selecciona tots els ul, li, h1, h2, h3, h4, h5, h6, body, html.
+assigna'ls un marge de 0px i un padding de 0 0px'*/
+ul, li, h1, h2, h3, h4, h5, h6, body, html{
+    margin: 0px;
+    padding:0px;
+}
+/*selecciona tots els div, span, header, article, aside, nav, ul i li 
+indica que la seva posició sigui relativa perquè la seva posició s'assigni segons el seu germà anterior
+utilitzant display indica que acceptin altres elements al seu costat i que puguin tenir unes mies.
+indica que el seu contingut tingui una alineació vertical cap a dalt
+*/
+div, span, header, article, aside, nav, ul , li {
+    position:relative;
+    display: inline-block;
+    vertical-align: top;   
+}
+/*Selecciona el html i el body i indica'n que tinguin una amplada i altura del 100%
+*/
+html body {
+    width: 100%;
+    height: 100%
+}
+/***********ELEMENTS GENERALS****************************/
+/*Selecciona tots els tags a, i indica que no tinguin subratllat i assignali un color al text*/
+a {
+   text-decoration: none;
+   color:chartreuse;
+}
+/* Selecciona els links quan el ratolí estigui a sobre (hover) i indica un color a la lletra*/
+a:hover {
+   color: orange; 
+}
+/* Selecciona tots els nodes de la clase withSpace , indica que tigui una amplada de 100% i */
+.withSpace{
+    width: 100%;
+}
+/*Selecciona tots els nodes e la classe button,
+
+indica que tingui una vora arrodonida d'un color i una amlada de 2px 
+indica que tingui un coor de fons i un color de text.
+Indica que el cursor sigui tipus pointer.
+Indica que l'element tingui una ombra de 
+Indica que tingui un padding a la dreta i a l'esquerre.  */
+.button{
+    color:bisque;
+    border-radius: 2px 2px 2px;
+    background-color: firebrick;
+    cursor: pointer;
+    text-shadow: initial;
+    padding-left:5px;
+    padding-right:2px; 
+    border-radius: 20px;
+}
+
+/*Selecciona els tags de la clase button i aplica'ls un estil diferent quan el ratolí estigui sobre*/
+a.button:hover{
+    color:orange;
+}
+/*Selecciona el body, indica que el text tingui una mida d'1em, que la lletra sigui del tipus "sans-serif"
+i el color de fons sigui #efefef;*/
+body{
+    font-family: sans-serif;
+    font-size: 1em;
+    background-color: #efefef;
+}
+
+/*Selecciona el header fill de body,
+indica que tingui una amplada de 100%, un color de fons i un color de lletra. */
+body>header{
+   width: 100%;
+   background-color: black;
+   color: blanchedalmond;
+}
+
+
+
+/*Selecciona l'element amb el id "main",
+indica que el display sigui del tipus block,
+indica que tingui una amplada del 95%, 
+indica que tingui un marge superior i inferior de 0, i un marge automàtic a la dreta i esquerre per aconseguir centrar-ho.
+indica que el seu contingut que sobresurti no es mostri
+*/
+#main{
+    display: block;
+    width: 95%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Selecciona el node amb id mitgPrincipal, 
+indica que tingui una amplada del 80% i que els seus elements inline es mostrin ocupant tot l'espai que puguin (justificats)*/
+#mitgPrincipal{
+    width: 75%;
+    text-align: justify;
+     
+}
+/*Selecciona el node amb id addPrincipal,
+indica que la seva altura sigui el total de l'altura del seu pare, 
+indica que els seus elements inline es mostrin alineats a la dreta, 
+indica que tingui una amplada corresponent al 20% del seu pare */
+#addPrincipal{
+    height: 100%;
+    text-align: right;
+   width: 18%;
+}
+
+/*Selecciona les imatges contingudes dins el node amb id addPrincipal
+indica que tinguin una amplada del 100%, una altura del 90% i una màxima altura i amplada de 300px  */
+#addPrincipal{
+   
+    height: 18%;
+    width: 225px;
+    height: 250px;
+}
+/*Alinea al centre el text del footer fill de body.*/
+body>footer{
+   text-align: center; 
+}
+/*Selecciona l'element amb id headerTop, 
+indica que tingui una altura de 150px 
+indica que el seus continguts inline es mostring alineats de forma justificada*/
+#headerTop{
+    height: 150px;
+    text-align: justify;
+}
+
+/* Selecciona els elements de la clase left fills de l'element amb id headerTop
+indica que tinguin una altura de 100%*/
+#headerTop>.left{
+    height: 100%;
+    
+}
+/*Seleciona les imatges filles dels elements de la clase left fills de l'element amb id headerTop,
+indica que tinguin una altura máxima del 100% */
+#headerTop>.left>img {
+    max-height:  100%;
+}
+/*Selecciona els nodes de la classe middle fills de l'element amb id headerTop,*/
+#headerTop>middle{
+    height: 100%;
+}
+
+
+/*Seleciona les imatges filles dels elements de la clase middle fills de l'element amb id headerTop,
+indica que tinguin una altura máxima del 100%*/
+#headerTop>.middle>img{
+    height: 100%;
+}
+
+/*Selecciona els nodes de la clase right fills del node amb id headerTop,
+indica que la seva posició sigui absoluta per que pugui quedar per devant els seus germans,
+situal a una distáncia de 30px a la dreta del seu pare i a 0px de la part superior, 
+indica que tingui una amplada mínima de 150px, */
+#headerTop>.right{
+    position: absolute;
+min-width:  150px;
+right: 30px;
+
+margin-top: 0px;
+
+
+    
+}
+
+    /*Selecciona tots els elements fills del forulari  dins el node de clase contDesplegable
+    indica que el seu display sigui del tipus block*/
+  .contDesplegable form{
+        display: block;
+    }
+    /*Selecciona el formulari dins el node de clase contDesplegable,
+    alinia el text a l'esquerre i indica que tingui una vora arrodonida.*/
+    .contDesplegable form{
+        text-align: left;
+        border-radius: 25px;
+        
+    }
+    /*Selecciona els nodes de clase hidDesplegable fills dels nodes de clase contDesplegable,
+    indica amb dispay que no es visualitzi ni ocupi espai, 
+    indica que la seva posició sigui absoluta per aconseguir que es mostri per sobre els seus germans, 
+    alinea els elements inline que contingui a l'esquerre, 
+    indica una posició en l'eix Z de 15,     */
+    .contDesplegable>.hidDesplegable{
+        display: none;
+        position: absolute;
+        text-align: left;
+        z-index: 15;
+        
+    }
+    /*Selecciona els nodes de clase hidDesplegable fills dels nodes de clase contDesplegable quan el ratolí estigui sobre contDesplegable.
+    Indica amb display que sigui de tipus block    */
+
+    
+  .contDesplegable:hover>.hidDesplegable{
+        display: block;
+    }
+    .withSpace> .right img{
+        
+    width:30px;
+    height: 30px;
+      
+        
+    }
+   .botonsTop>.button{
+   display:none;
+        
+    }
+   
+   
+    .middle li{
+        display:block;
+        border-radius: initial;
+            color:blue;
+            background-color: red;
+            
+ 
+            
+            
+        
+         
+    }
+    #contenedorhider{
+     width: 320px;
+     overflow: hidden;
+     height: 100%;
+    
+     
+    
+     
+    }
+    
+    #contenedorhider>div{
+       
+        width: 100%;
+            height:100%;
+           
+    }
+    
+ 
+    
+    
+    .topTable{
+        display: inline-block;
+        width: 30%;
+        text-align: justify;
+        background-color: blueviolet;
+        
+        
+    }
+    #topLlista1>div{
+        border: 5px solid;
+        
+        background-color: #efefef;
+        overflow: scroll;
+        height: 350px;
+        
+    }
+     #topLlista2>div{
+        border: 5px solid;
+     overflow: scroll;
+       
+        height: 350px;
+        background-color: #efefef;
+    }
+     #topLlista3>div{
+        border: 5px solid;
+       overflow: scroll;
+      background-color: #efefef;
+       height:350px;
+    }
+    #main>.withSpace{
+        margin-top: 20px;
+        
+    }
+    section{
+        position: relative;
+        width:600px;
+        display: block;
+        height:100%
+    }
+    
+    .middle{
+        height: 100%;
+        
+    }
+     #topLlista1>header{
+      
+         margin-left:90px;
+        
+     
+        
+    }
+     #topLlista2>header{
+     
+       margin-left:90px;
+    
+    }
+     #topLlista3>header{
+        margin-left:90px;
+       
+      
+     }

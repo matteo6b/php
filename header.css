@@ -1,0 +1,98 @@
+html, body { height:100% ;margin:0px !important; font-family: arial;background:url(img/fondo.jpg);}
+header
+ { 
+ 
+ width:100%;
+ background:url(img/100H.jpg);
+ background-size:cover;
+  }
+  
+  
+ header .logo{
+    height:50px;
+	width:50px;
+  
+    float:left;
+	padding:10px 0 0 30px;
+    }
+	
+ header   nav{
+	float:right;
+	padding:30px 30px 0 0;
+	}
+a:link, a:visited{  
+text-decoration:none;  
+}  
+	
+ header	 nav a{
+     display:inline-block;
+	 margin-left:20px;
+	 color : rgba(0,0,0,0.7);
+	 font-size:24px;
+	 font-weight: 900px;
+	
+	 text-transform: uppercase;
+	 
+    }
+
+header nav a:hover{
+	color:rgba(0,0,0,8)
+	}
+	
+header h1{
+		text-align:center;
+		font-size:72px;
+		font-weight:700;
+		color: rgb(0, 0, 0);
+		text-transform:uppercase;
+		letter-spacing:0.05em;
+		margin-bottom:20px;
+		clear:both;
+		padding-top:100px;
+		
+		
+	
+	
+	}
+header span {
+	display:inline-block;
+	padding:0.2em 0.5em;
+	border: white solid 10px;
+	
+	}
+header .kicker a{
+	text-align:left;
+	font-weight:700;
+	text-transform:uppercase;
+	color:black;
+	letter-spacing:0.05em;
+	text-decoration:none;
+	}
+	header .kicker2 {
+	text-align:center;
+	font-weight:700;
+	text-transform:uppercase;
+	color:black;
+	letter-spacing:0.05em;
+	text-decoration:none;
+	}
+	
+header .kicker1 a{
+	text-align:left;
+	font-weight:700;
+	text-transform:uppercase;
+	color:black;
+	letter-spacing:0.05em;
+	text-decoration:none;
+	}	
+	
+@media (max-width:640px){
+.logo{
+float: none;
+margin: 0 auto;
+}
+nav{float:none;
+text-align:center;
+padding-top:80px;
+}
+}
